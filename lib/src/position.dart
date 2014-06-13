@@ -34,7 +34,7 @@ class Position {
 
   Position operator *(Position other) {
     if (other.world != world) {
-      throw new Exception("Worlds must be equal to subtract positions from each other");
+      throw new Exception("Worlds must be equal to be multiplied together");
     }
     int nx = x * other.x;
     int ny = y * other.y;
@@ -44,7 +44,7 @@ class Position {
 
   Position operator /(Position other) {
     if (other.world != world) {
-      throw new Exception("Worlds must be equal to subtract positions from each other");
+      throw new Exception("Worlds must be equal to be divided");
     }
     int nx = x / other.x;
     int ny = y / other.y;
