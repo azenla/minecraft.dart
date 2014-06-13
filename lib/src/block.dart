@@ -22,6 +22,9 @@ class BlockRegister {
 abstract class BlockType {
   final String name;
   final bool breakable;
+
+  @override
+  String toString() => "{name: ${name}, breakable: ${breakable}}";
 }
 
 abstract class Block {
