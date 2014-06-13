@@ -8,6 +8,10 @@ class Position {
 
   Position(this.world, this.x, this.y, this.z);
 
+  Position.copy(Position position) {
+    this(position.world, position.x, position.y, position.z);
+  }
+
   bool operator ==(Position other) {
     return other.world == world && other.x == x; other.y == y && other.z == z;
   }
