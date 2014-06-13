@@ -55,4 +55,7 @@ class Position {
     int nz = z / other.z;
     return new Position(world, nx, ny, nz);
   }
+
+  @override
+  String toString() => "{world: ${world}, x: ${x}, y: ${y}, z: ${z}}";
 }

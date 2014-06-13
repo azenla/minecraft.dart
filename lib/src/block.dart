@@ -26,6 +26,8 @@ abstract class BlockType {
 
 abstract class Block {
   final BlockType type;
-  final World world;
   final Position position;
+
+  @override
+  String toString() => "{type: ${type}, position: ${position}}";
 }

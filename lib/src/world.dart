@@ -5,4 +5,7 @@ abstract class World {
   final List<Entity> entities = [];
 
   Block blockAt(Position position);
+
+  @override
+  String toString() => "${levelName}";
 }
