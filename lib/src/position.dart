@@ -31,4 +31,24 @@ class Position {
     int nz = z - other.z;
     return new Position(world, nx, ny, nz);
   }
+
+  Position operator *(Position other) {
+    if (other.world != world) {
+      throw new Exception("Worlds must be equal to subtract positions from each other");
+    }
+    int nx = x * other.x;
+    int ny = y * other.y;
+    int nz = z * other.z;
+    return new Position(world, nx, ny, nz);
+  }
+
+  Position operator /(Position other) {
+    if (other.world != world) {
+      throw new Exception("Worlds must be equal to subtract positions from each other");
+    }
+    int nx = x / other.x;
+    int ny = y / other.y;
+    int nz = z / other.z;
+    return new Position(world, nx, ny, nz);
+  }
 }
