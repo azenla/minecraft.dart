@@ -1,2 +1,6 @@
 library minecraft;
 
+/* The Best thing in MC */
+part 'src/block.dart';
+part 'src/world.dart';
+part 'src/position.dart';
