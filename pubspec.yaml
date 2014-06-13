@@ -1,4 +1,5 @@
 name: minecraft
 version: 0.1.0
 description: Base Minecraft API
-
+homepage: https://github.com/kaendfinger/minecraft.dart
+author: Kenneth Endfinger <kaendfinger@gmail.com>
