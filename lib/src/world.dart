@@ -1,8 +1,9 @@
 part of minecraft;
 
 abstract class World {
-  String levelName;
-  final List<Entity> entities = [];
+  final String levelName;
+
+  List<Entity> get entities;
 
   Block blockAt(Position position);
 
